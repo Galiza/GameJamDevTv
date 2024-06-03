@@ -43,6 +43,7 @@ public class Weapon : MonoBehaviour
             instantiatedProjectile.velocity = v;
             gunCadency = shootingReloadTime;
             hasFired = true;
+            GetComponent<AudioSource>().Play();
         }
     }
 
